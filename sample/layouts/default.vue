@@ -1,6 +1,8 @@
 <template>
   <div>
+    <my-header />
     <nuxt/>
+    <my-footer />
   </div>
 </template>
 
@@ -50,4 +52,15 @@ html {
   background-color: #35495e;
 }
 </style>
+<script>
+  import MyHeader from '../components//Header.vue';
+  import MyFooter from '../components/Footer';
+
+  export default {
+    components: {
+      MyHeader,
+      MyFooter
+    }
+  }
+</script>
 

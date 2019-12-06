@@ -1,8 +1,8 @@
 {
-  "name": "nuxtdemo",
+  "name": "sample",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "XiangYu <kisky3@126.com>",
+  "author": "kisky",
   "private": true,
   "scripts": {
     "dev": "nuxt",
