@@ -7,11 +7,6 @@
             <p>This is a sidebar content</p>
             <p>This is a sidebar content</p>
             <p>This is a sidebar content</p>
-            <p>This is a sidebar content</p>
-            <p>This is a sidebar content</p>
-            <p>This is a sidebar content</p>
-            <p>This is a sidebar content</p>
-            <p>This is a sidebar content</p>
         </div>
     </aside>
 </template>
@@ -24,5 +19,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding:20px;
   }
 </style>

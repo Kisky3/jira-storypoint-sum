@@ -6,17 +6,16 @@
 </template>
 
 <script>
+export default {
+  layout: 'twocolumns'
+}
 </script>
 
 <style>
   .sample_container {
       padding: 45px;
-      position: absolute;
-      left: 5%;
-      right: 5%;
-      width: 90%;
+      width: 100%;
       height: 100%;
       background: #f9f7e8;
   }
 </style>
-
