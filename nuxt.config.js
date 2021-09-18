@@ -8,12 +8,6 @@ export default {
     vite: {
       ssr: true
     },
-    build: {
-      babel: {
-        babelrc: false,
-        compact: true
-      }
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -50,10 +44,12 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
+    'bootstrap-vue/nuxt'
   ],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    babel: {
+      compact: true
+    }
   }
 }
