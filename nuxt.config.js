@@ -11,7 +11,7 @@ export default {
     build: {
       babel: {
         babelrc: false,
-        compact: false
+        compact: true
       }
     },
     meta: [
