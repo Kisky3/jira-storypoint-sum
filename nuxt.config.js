@@ -8,6 +8,12 @@ export default {
     vite: {
       ssr: true
     },
+    build: {
+      babel: {
+        babelrc: false,
+        compact: false
+      }
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
