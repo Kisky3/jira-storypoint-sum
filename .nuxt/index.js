@@ -63,7 +63,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"jira-storypoint-sum","htmlAttrs":{"lang":"en"},"vite":{"ssr":true},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"buildModules":["@nuxt\u002Ftypescript-build","nuxt-vite"],"style":[],"script":[]},
+    head: {"title":"jira-storypoint-sum","htmlAttrs":{"lang":"en"},"vite":{"ssr":false},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"buildModules":["@nuxt\u002Ftypescript-build","nuxt-vite"],"style":[],"script":[]},
 
     router,
     nuxt: {

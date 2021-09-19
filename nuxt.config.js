@@ -7,7 +7,7 @@ export default {
       lang: 'en'
     },
     vite: {
-      ssr: true
+      ssr: false
     },
     meta: [
       { charset: 'utf-8' },
