@@ -51,5 +51,8 @@ export default {
     babel: {
       compact: true
     }
+  },
+  generate: {
+    fallback: true
   }
 }
