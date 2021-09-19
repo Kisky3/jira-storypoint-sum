@@ -1,6 +1,8 @@
 # Dependency directories
 node_modules/
 jspm_packages/
+.nuxt/
+node_modules/
 
 <!-- # nuxt.js build output
 
