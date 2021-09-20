@@ -1,4 +1,7 @@
 # jira-storypoint-sum
+## Preview
+https://jira-storypoint-sum.netlify.app/
+
 
 ## Build Setup
 
