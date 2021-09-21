@@ -170,7 +170,7 @@
     <!-- Header End -->
   </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
   $small: 800px;
 
 .brand {

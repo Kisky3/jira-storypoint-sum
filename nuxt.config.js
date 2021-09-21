@@ -1,3 +1,5 @@
+import Sass from 'sass'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
@@ -51,6 +53,14 @@ export default {
   build: {
     babel: {
       compact: true
+    },
+    loaders: {
+      scss: {
+        implementation: Sass,
+        sassOptions: {
+          fiber: Fiber
+        }
+      }
     }
   },
   generate: {
