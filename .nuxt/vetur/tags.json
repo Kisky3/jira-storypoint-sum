@@ -1,4 +1,7 @@
 {
+  "Container": {
+    "description": "Auto imported from components/Container.vue"
+  },
   "DoughnutChart": {
     "description": "Auto imported from components/DoughnutChart.vue"
   },

@@ -1,3 +1,4 @@
+export { default as Container } from '../../components/Container.vue'
 export { default as DoughnutChart } from '../../components/DoughnutChart.vue'
 export { default as Header } from '../../components/Header.vue'
 

@@ -7,7 +7,7 @@ export default {
   data () {
     return {
       data: {
-        labels: ['メンバー１', '向井', 'メンバー3'],
+        labels: ['メンバー１', 'Ko', 'メンバー3'],
         datasets: [
           {
             label: 'Dataset',
