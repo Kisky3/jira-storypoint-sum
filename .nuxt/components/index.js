@@ -1,4 +1,4 @@
-export { default as Chart } from '../../components/Chart.vue'
+export { default as DoughnutChart } from '../../components/DoughnutChart.vue'
 export { default as Header } from '../../components/Header.vue'
 export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
 

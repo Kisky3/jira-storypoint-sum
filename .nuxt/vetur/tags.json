@@ -1,6 +1,6 @@
 {
-  "Chart": {
-    "description": "Auto imported from components/Chart.vue"
+  "DoughnutChart": {
+    "description": "Auto imported from components/DoughnutChart.vue"
   },
   "Header": {
     "description": "Auto imported from components/Header.vue"

@@ -4,3 +4,10 @@
     Chart
   </div>
 </template>
+<script lang="ts">
+
+</script>
+<style scope lang="scss">
+
+</style>
+
