@@ -1,6 +1,5 @@
 import Sass from 'sass'
 import Fiber from 'fibers'
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
@@ -30,6 +29,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: '~/assets/scss/common.scss' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -50,6 +50,9 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt'
   ],
+  styleResources: {
+    scss: ['~/assets/scss/_variable.scss'],
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     babel: {
