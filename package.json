@@ -17,6 +17,9 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
-    "nuxt-vite": "^0.2.4"
+    "fibers": "^5.0.0",
+    "nuxt-vite": "^0.2.4",
+    "sass": "^1.42.0",
+    "sass-loader": "^12.1.0"
   }
 }
