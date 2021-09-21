@@ -18,8 +18,9 @@
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "fibers": "^5.0.0",
+    "node-sass": "4.14.1",
     "nuxt-vite": "^0.2.4",
     "sass": "^1.42.0",
-    "sass-loader": "^12.1.0"
+    "sass-loader": "10.2.0"
   }
 }
