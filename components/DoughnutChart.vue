@@ -7,17 +7,24 @@ export default {
   data () {
     return {
       data: {
-        labels: ['向井', '鳥越', '楠'],
+        labels: ['メンバー１', '向井', 'メンバー3'],
         datasets: [
           {
             label: 'Dataset',
             data: [10, 60, 30],
-            backgroundColor: ['pink', 'skyblue', 'gray']
+            backgroundColor: ['pink', 'skyblue', 'gray'],
+            borderColor: 'transparent'
           }
         ]
       },
       options: {
-        responsive: true
+        responsive: true,
+        legend: {
+          position: 'right',
+          labels : {
+            fontSize: 28,
+          }
+        },
       }
     }
   },

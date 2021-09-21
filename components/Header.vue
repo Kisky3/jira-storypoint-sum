@@ -5,7 +5,7 @@
     <header class="site-header">
       <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
-          <a href="#" class="brand">Brand</a>
+          <a href="#" class="brand">Sprint & Storypoint Dashboard</a>
           <div class="search">
             <button class="search__toggle" aria-label="Open search">
               Search
@@ -78,7 +78,7 @@
                       style="fill: currentColor"
                     ></path>
                   </svg>
-                  <span>My Network</span>
+                  <span>Members</span>
                 </a>
               </li>
               <li class="nav__item">
@@ -105,34 +105,7 @@
                       style="fill: currentColor"
                     ></path>
                   </svg>
-                  <span>Jobs</span>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#">
-                  <svg
-                    viewBox="0 0 24 24"
-                    width="24px"
-                    height="24px"
-                    x="0"
-                    y="0"
-                    preserveAspectRatio="xMinYMin meet"
-                    class="nav-icon"
-                    focusable="false"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8Zm-4,8H12V15h5Zm1-3H11V12h7ZM17,4V6H6A1,1,0,0,0,5,7v8H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16A1,1,0,0,1,17,4Z"
-                      class="inactive-item"
-                      style="fill-opacity: 1"
-                    ></path>
-                    <path
-                      d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8ZM20,19.11L18.52,18H9V10H20v9.11ZM12,15h5v1H12V15ZM4,13H5v2H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16a1,1,0,0,1,1,1V6H15V5H4v8Zm14,0H11V12h7v1Z"
-                      class="active-item"
-                      style="fill: currentColor"
-                    ></path>
-                  </svg>
-                  <span>Messaging</span>
+                  <span>Jira</span>
                 </a>
               </li>
               <li class="nav__item">
@@ -175,7 +148,7 @@
 
 .brand {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .site-header {
