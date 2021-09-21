@@ -294,7 +294,6 @@
   font-size: 0;
   width: 34px;
   height: 34px;
-  background: url("../img/header-3/search.svg") center right/22px no-repeat;
   border: 0;
   display: none;
 
@@ -307,7 +306,6 @@
     position: absolute;
     right: 5.5rem;
     top: 0.65rem;
-    background: url("../img/header-3/search.svg") center/22px no-repeat;
   }
 }
 
