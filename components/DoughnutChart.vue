@@ -1,13 +1,28 @@
-<!-- Please remove this file from your project -->
-<template>
-  <div>
-    Chart
-  </div>
-</template>
-<script lang="ts">
+<script>
+import { Doughnut } from 'vue-chartjs';
 
+export default {
+  extends: Doughnut,
+  name: 'chart',
+  data () {
+    return {
+      data: {
+        labels: ['teens','twenties', 'thirties', 'forties', 'fifties', 'sixties'],
+        datasets: [
+          {
+            label: 'Dataset',
+            data: [20, 10, 30, 10, 60, 30],
+            backgroundColor: ['blue', 'green', 'purple', 'yellow', 'pink', 'skyblue', 'gray']
+          }
+        ]
+      },
+      options: {
+        responsive: true
+      }
+    }
+  },
+  mounted () {
+    this.renderChart(this.data, this.options)
+  }
+}
 </script>
-<style scope lang="scss">
-
-</style>
-
