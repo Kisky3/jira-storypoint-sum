@@ -8,4 +8,3 @@ You can directly use them in pages and other components without the need to impo
 
 - `<DoughnutChart>` | `<doughnut-chart>` (components/DoughnutChart.vue)
 - `<Header>` | `<header>` (components/Header.vue)
-- `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)

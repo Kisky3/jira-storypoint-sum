@@ -1,6 +1,5 @@
 export { default as DoughnutChart } from '../../components/DoughnutChart.vue'
 export { default as Header } from '../../components/Header.vue'
-export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

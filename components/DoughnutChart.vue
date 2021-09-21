@@ -7,12 +7,12 @@ export default {
   data () {
     return {
       data: {
-        labels: ['teens','twenties', 'thirties', 'forties', 'fifties', 'sixties'],
+        labels: ['向井', '鳥越', '楠'],
         datasets: [
           {
             label: 'Dataset',
-            data: [20, 10, 30, 10, 60, 30],
-            backgroundColor: ['blue', 'green', 'purple', 'yellow', 'pink', 'skyblue', 'gray']
+            data: [10, 60, 30],
+            backgroundColor: ['pink', 'skyblue', 'gray']
           }
         ]
       },
