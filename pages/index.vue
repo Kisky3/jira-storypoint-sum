@@ -2,13 +2,15 @@
   <div>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <Header/>
-    <doughnut-chart/>
+    <Container/>
    </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Container from '~/components/Container.vue'
 
 export default Vue.extend({
+  components: { Container },
 })
 </script>

@@ -6,6 +6,11 @@
       <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
           <a href="#" class="brand">Sprint & Storypoint Dashboard</a>
+          <div class="search">
+            <button class="search__toggle" aria-label="Open search">
+              Search
+            </button>
+          </div>
         </div>
         <div class="site-header__end">
           <nav class="nav">
@@ -309,28 +314,22 @@
 </style>
 
 <script>
-let navToggle = document.querySelector(".nav__toggle");
-let navWrapper = document.querySelector(".nav__wrapper");
+// document.querySelector(".nav__toggle").addEventListener("click", function () {
+//   if (document.querySelector(".nav__wrapper").classList.contains("active")) {
+//     this.setAttribute("aria-expanded", "false");
+//     this.setAttribute("aria-label", "menu");
+//     document.querySelector(".nav__wrapper").classList.remove("active");
+//   } else {
+//     document.querySelector(".nav__wrapper").classList.add("active");
+//     this.setAttribute("aria-label", "close menu");
+//     this.setAttribute("aria-expanded", "true");
+//   }
+// });
 
-navToggle.addEventListener("click", function () {
-  if (navWrapper.classList.contains("active")) {
-    this.setAttribute("aria-expanded", "false");
-    this.setAttribute("aria-label", "menu");
-    navWrapper.classList.remove("active");
-  } else {
-    navWrapper.classList.add("active");
-    this.setAttribute("aria-label", "close menu");
-    this.setAttribute("aria-expanded", "true");
-  }
-});
+// document.querySelector(".search__toggle").addEventListener("click", showSearch);
 
-let searchToggle = document.querySelector(".search__toggle");
-let searchForm = document.querySelector(".search__form");
-
-searchToggle.addEventListener("click", showSearch);
-
-function showSearch() {
-  searchForm.classList.toggle("active");
-}
+// function showSearch() {
+//   document.querySelector(".search__form").classList.toggle("active");
+// }
 </script>
 
