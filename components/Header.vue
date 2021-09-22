@@ -6,15 +6,10 @@
       <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
           <a href="#" class="brand">Sprint & Storypoint Dashboard</a>
-          <div class="search">
-            <button class="search__toggle" aria-label="Open search">
-              Search
-            </button>
-          </div>
         </div>
         <div class="site-header__end">
           <nav class="nav">
-            <button class="nav__toggle" :click="openMenu" aria-expanded="false" type="button">
+            <button class="nav__toggle" @click="openMenu" aria-expanded="false" type="button">
               menu
             </button>
             <ul class="nav__wrapper">
@@ -177,15 +172,16 @@
 
   @media (max-width: $small - 1) {
     position: absolute;
-    top: calc(100% + 35px);
+    top: calc(100% + 1px);
     right: 0;
     left: 0;
     z-index: -1;
-    background-color: #d9f0f7;
+    background-color: rgba(217, 240, 247, 0.5);
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: 100;
 
     &.active {
       visibility: visible;
@@ -316,23 +312,18 @@
 <script>
 export default {
   name: 'Header',
-  data () {},
   methods: {
-    openMenu() {
-      alert("dss");
+    openMenu: () => {
+      alert("f");
+      let active = document.querySelector(".nav__wrapper").classList.contains("active");
+      if (active) {
+    document.querySelector(".nav__wrapper").classList.remove("active");
+  } else {
+    document.querySelector(".nav__wrapper").classList.add("active");
+  }
     }
   }
 }
-// document.querySelector(".nav__toggle").addEventListener("click", function () {
-//   if (document.querySelector(".nav__wrapper").classList.contains("active")) {
-//     this.setAttribute("aria-expanded", "false");
-//     this.setAttribute("aria-label", "menu");
-//     document.querySelector(".nav__wrapper").classList.remove("active");
-//   } else {
-//     document.querySelector(".nav__wrapper").classList.add("active");
-//     this.setAttribute("aria-label", "close menu");
-//     this.setAttribute("aria-expanded", "true");
-//   }
-// });
+
 </script>
 
