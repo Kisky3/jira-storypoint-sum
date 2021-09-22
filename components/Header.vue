@@ -14,7 +14,7 @@
         </div>
         <div class="site-header__end">
           <nav class="nav">
-            <button class="nav__toggle" aria-expanded="false" type="button">
+            <button class="nav__toggle" :click="openMenu" aria-expanded="false" type="button">
               menu
             </button>
             <ul class="nav__wrapper">
@@ -314,6 +314,15 @@
 </style>
 
 <script>
+export default {
+  name: 'Header',
+  data () {},
+  methods: {
+    openMenu() {
+      alert("dss");
+    }
+  }
+}
 // document.querySelector(".nav__toggle").addEventListener("click", function () {
 //   if (document.querySelector(".nav__wrapper").classList.contains("active")) {
 //     this.setAttribute("aria-expanded", "false");
@@ -325,11 +334,5 @@
 //     this.setAttribute("aria-expanded", "true");
 //   }
 // });
-
-// document.querySelector(".search__toggle").addEventListener("click", showSearch);
-
-// function showSearch() {
-//   document.querySelector(".search__form").classList.toggle("active");
-// }
 </script>
 
