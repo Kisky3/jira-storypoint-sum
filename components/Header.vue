@@ -9,7 +9,12 @@
         </div>
         <div class="site-header__end">
           <nav class="nav">
-            <button class="nav__toggle" @click="openMenu" aria-expanded="false" type="button">
+            <button
+              class="nav__toggle"
+              @click="openMenu"
+              aria-expanded="false"
+              type="button"
+            >
               menu
             </button>
             <ul class="nav__wrapper">
@@ -130,7 +135,7 @@
   </div>
 </template>
 <style scope lang="scss">
-  $small: 800px;
+$small: 800px;
 
 .brand {
   font-weight: bold;
@@ -236,71 +241,22 @@
   display: none;
 
   @media (max-width: $small - 1) {
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    cursor: pointer;
     display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-}
-
-.search {
-  display: flex;
-  margin-left: 1rem;
-}
-
-.search__toggle {
-  appearance: none;
-  order: 1;
-  font-size: 0;
-  width: 34px;
-  height: 34px;
-  border: 0;
-  display: none;
-
-  @media (min-width: $small) {
-    border-left: 1px solid #979797;
-    padding-left: 10px;
-  }
-
-  @media (max-width: $small - 1) {
-    position: absolute;
-    right: 5.5rem;
-    top: 0.65rem;
-  }
-}
-
-.search__form {
-  //display: none;
-  display: block;
-
-  &.active {
-    display: block;
-  }
-
-  @media (max-width: $small - 1) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    //display: none;
-
-    input {
-      width: 100%;
-    }
-  }
-
-  input {
-    min-width: 200px;
-    appearance: none;
-    border: 0;
-    background-color: #fff;
-    border-radius: 0;
-    font-size: 16px;
-    padding: 0.5rem;
-
-    @media (max-width: $small - 1) {
-      border-bottom: 1px solid #979797;
-    }
+    margin: 0 auto;
   }
 }
 
@@ -311,19 +267,18 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: "Header",
   methods: {
     openMenu: () => {
-      alert("f");
-      let active = document.querySelector(".nav__wrapper").classList.contains("active");
-      if (active) {
-    document.querySelector(".nav__wrapper").classList.remove("active");
-  } else {
-    document.querySelector(".nav__wrapper").classList.add("active");
-  }
-    }
-  }
-}
-
+      let classList = document
+        .querySelector(".nav__wrapper")
+        .classList;
+      if (classList.contains("active")) {
+        classList.remove("active");
+      } else {
+        classList.add("active");
+      }
+    },
+  },
+};
 </script>
-
