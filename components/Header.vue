@@ -140,6 +140,7 @@ $small: 800px;
 .brand {
   font-weight: bold;
   font-size: 30px;
+  font-family: system-ui;
 }
 
 .site-header {
@@ -239,7 +240,6 @@ $small: 800px;
 
 .nav__toggle {
   display: none;
-
   @media (max-width: $small - 1) {
     width: 70px;
     height: 40px;

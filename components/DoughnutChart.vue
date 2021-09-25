@@ -6,17 +6,6 @@ export default {
   name: 'chart',
   data () {
     return {
-      data: {
-        labels: ['メンバー１', 'Ko', 'メンバー3'],
-        datasets: [
-          {
-            label: 'Dataset',
-            data: [10, 60, 30],
-            backgroundColor: ['pink', 'skyblue', 'gray'],
-            borderColor: 'transparent'
-          }
-        ]
-      },
       options: {
         responsive: true,
         legend: {
@@ -26,6 +15,19 @@ export default {
           }
         },
       }
+    }
+  },
+  computed: {
+    data() {
+       return {
+         datasets: [{
+            label: 'Dataset',
+            data: [10, 60, 30],
+            backgroundColor: ['pink', 'skyblue', 'gray'],
+            borderColor: 'transparent'
+          }],
+          labels:['メンバー１', 'メンバー２', 'メンバー3']
+       }
     }
   },
   mounted () {

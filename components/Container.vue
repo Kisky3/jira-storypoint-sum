@@ -15,7 +15,7 @@
   max-height: 800px;
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 420px;
   transform: translate(-50%,-50%);
 }
 </style>
