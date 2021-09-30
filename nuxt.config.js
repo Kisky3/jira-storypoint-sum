@@ -1,5 +1,13 @@
 import Sass from 'sass'
 import Fiber from 'fibers'
+
+require('dotenv').config()
+const {
+  JIRA_TEAM_BLUE,
+  JIRA_TEAM_YELLOW,
+  JIRA_API_BASE_URL,
+  JIRA_API_USER,
+} = process.env
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
@@ -44,7 +52,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    'dotenv',
   ],
   styleResources: {
     scss: ['~/assets/scss/_variable.scss'],
@@ -61,6 +68,12 @@ export default {
           fiber: Fiber,
         },
       },
+    },
+    env: {
+      JIRA_TEAM_BLUE,
+      JIRA_TEAM_YELLOW,
+      JIRA_API_BASE_URL,
+      JIRA_API_USER,
     },
   },
   generate: {
