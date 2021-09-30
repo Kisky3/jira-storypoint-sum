@@ -6,35 +6,30 @@ export default {
   head: {
     title: 'jira-storypoint-sum',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     vite: {
-      ssr: false
+      ssr: false,
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     buildModules: [
       // https://go.nuxtjs.dev/typescript
       '@nuxt/typescript-build',
-      'nuxt-vite' // 追加
+      'nuxt-vite', // 追加
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    { src: '~/assets/scss/common.scss' },
-  ],
+  css: [{ src: '~/assets/scss/common.scss' }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -48,7 +43,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    'dotenv',
   ],
   styleResources: {
     scss: ['~/assets/scss/_variable.scss'],
@@ -56,18 +52,18 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     babel: {
-      compact: true
+      compact: true,
     },
     loaders: {
       scss: {
         implementation: Sass,
         sassOptions: {
-          fiber: Fiber
-        }
-      }
-    }
+          fiber: Fiber,
+        },
+      },
+    },
   },
   generate: {
-    fallback: true
-  }
+    fallback: true,
+  },
 }
