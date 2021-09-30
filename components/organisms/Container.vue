@@ -3,6 +3,7 @@
   <div>
     <!-- Container Start -->
     <div class="container">
+      <search-panel @searchData="searchData()" />
       <doughnut-chart />
     </div>
 
@@ -20,11 +21,17 @@
 }
 </style>
 
-<script>
-import DoughnutChart from '@/components/DoughnutChart.vue'
+<script lang="ts">
+import DoughnutChart from '@/components/molecules/DoughnutChart.vue'
+import SearchPanel from '@/components/molecules/SearchPanel.vue'
 export default {
   components: {
     DoughnutChart,
+  },
+  methods: {
+    searchData(): void {
+      alert('hey')
+    },
   },
 }
 </script>
