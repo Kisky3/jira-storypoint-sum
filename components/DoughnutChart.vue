@@ -1,5 +1,6 @@
 <script lang="ts">
 import { Doughnut } from 'vue-chartjs'
+import api from '@/api/info'
 
 export default {
   extends: Doughnut,
@@ -19,6 +20,7 @@ export default {
   },
   computed: {
     data() {
+      api.getJiraStoryPointData()
       return {
         datasets: [
           {
