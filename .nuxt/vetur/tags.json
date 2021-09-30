@@ -1,7 +1,4 @@
 {
-  "OrganismsContainer": {
-    "description": "Auto imported from components/organisms/Container.vue"
-  },
   "AtomsBasicInput": {
     "description": "Auto imported from components/atoms/BasicInput.vue"
   },
@@ -16,5 +13,8 @@
   },
   "MoleculesSearchPanel": {
     "description": "Auto imported from components/molecules/SearchPanel.vue"
+  },
+  "OrganismsContainer": {
+    "description": "Auto imported from components/organisms/Container.vue"
   }
 }

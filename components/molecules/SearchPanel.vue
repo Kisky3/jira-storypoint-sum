@@ -26,18 +26,18 @@ export default {
     BasicRadio,
   },
   mounted() {
-    alert(process.env.VUE_APP_JIRA_TEAM_BLUE)
+    alert(process.env.JIRA_TEAM_BLUE)
   },
   data() {
     return {
       teamOption: [
         {
-          value: process.env.VUE_APP_JIRA_TEAM_BLUE,
-          label: process.env.VUE_APP_JIRA_TEAM_BLUE,
+          value: process.env.JIRA_TEAM_BLUE,
+          label: process.env.JIRA_TEAM_BLUE,
         },
         {
-          value: process.env.VUE_APP_JIRA_TEAM_YELLOW,
-          label: process.env.VUE_APP_JIRA_TEAM_YELLOW,
+          value: process.env.JIRA_TEAM_YELLOW,
+          label: process.env.JIRA_TEAM_YELLOW,
         },
       ],
     }

@@ -6,9 +6,9 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<OrganismsContainer>` | `<organisms-container>` (components/organisms/Container.vue)
 - `<AtomsBasicInput>` | `<atoms-basic-input>` (components/atoms/BasicInput.vue)
 - `<AtomsBasicRadio>` | `<atoms-basic-radio>` (components/atoms/BasicRadio.vue)
 - `<MoleculesDoughnutChart>` | `<molecules-doughnut-chart>` (components/molecules/DoughnutChart.vue)
 - `<MoleculesHeader>` | `<molecules-header>` (components/molecules/Header.vue)
 - `<MoleculesSearchPanel>` | `<molecules-search-panel>` (components/molecules/SearchPanel.vue)
+- `<OrganismsContainer>` | `<organisms-container>` (components/organisms/Container.vue)
