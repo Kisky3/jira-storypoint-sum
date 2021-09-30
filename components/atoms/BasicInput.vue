@@ -11,7 +11,7 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'InputText',
+  name: 'BasicInput',
   props: ['value', 'type', 'name', 'placeholder'],
   methods: {
     // TODO: fix ts error
