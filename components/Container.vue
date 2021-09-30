@@ -3,20 +3,20 @@
   <div>
     <!-- Container Start -->
     <div class="container">
-    <doughnut-chart/>
+      <doughnut-chart />
     </div>
 
     <!-- Container End -->
   </div>
 </template>
 <style scope lang="scss">
-.container  {
+.container {
   max-width: 800px;
   max-height: 800px;
   position: absolute;
   left: 50%;
   top: 420px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 </style>
 
@@ -24,9 +24,7 @@
 import DoughnutChart from '@/components/DoughnutChart.vue'
 export default {
   components: {
-    DoughnutChart
-  }
+    DoughnutChart,
+  },
 }
-
 </script>
-

@@ -5,6 +5,7 @@ import api from '@/api/info'
 export default {
   extends: Doughnut,
   name: 'chart',
+  props: ['team', 'sprint'],
   data() {
     return {
       options: {
@@ -20,7 +21,7 @@ export default {
   },
   computed: {
     data() {
-      api.getJiraStoryPointData()
+      api.getJiraStoryPointData(this.team, this.sprint)
       return {
         datasets: [
           {

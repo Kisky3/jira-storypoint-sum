@@ -9,3 +9,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Container>` | `<container>` (components/Container.vue)
 - `<DoughnutChart>` | `<doughnut-chart>` (components/DoughnutChart.vue)
 - `<Header>` | `<header>` (components/Header.vue)
+- `<SearchPanel>` | `<search-panel>` (components/SearchPanel.vue)

@@ -8,6 +8,6 @@ export default {
       team +
       " AND sprint=" +
       sprint;
-    return axios.post("", []).then((res) => res.data);
+    return axios.post(URL, []).then((res) => res.data);
   },
 };
