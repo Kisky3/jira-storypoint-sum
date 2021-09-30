@@ -2,6 +2,7 @@
 node_modules/
 jspm_packages
 .nuxt
+.env.local
 
 <!-- # nuxt.js build output
 
