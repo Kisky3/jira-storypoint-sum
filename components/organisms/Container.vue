@@ -27,6 +27,7 @@ import SearchPanel from '@/components/molecules/SearchPanel.vue'
 export default {
   components: {
     DoughnutChart,
+    SearchPanel,
   },
   methods: {
     searchData(): void {

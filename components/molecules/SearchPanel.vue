@@ -1,9 +1,15 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div>
+  <div class="search-panel">
     <!-- Search Panel Start -->
-    <basic-input></basic-input>
-    <basic-radio></basic-radio>
+    <basic-input
+      v-model="sprint"
+      type="text"
+      placeholder="例）シャープ AQUOS LC-50U45"
+      name="商品名"
+      value="value"
+    />
+    <basic-radio v-model="team" name="team" :options="teamOption" />
     <button @click="searchData">Search</button>
 
     <!-- Search Panel End -->
@@ -19,6 +25,23 @@ export default {
     BasicInput,
     BasicRadio,
   },
+  mounted() {
+    alert(process.env.VUE_APP_JIRA_TEAM_BLUE)
+  },
+  data() {
+    return {
+      teamOption: [
+        {
+          value: process.env.VUE_APP_JIRA_TEAM_BLUE,
+          label: process.env.VUE_APP_JIRA_TEAM_BLUE,
+        },
+        {
+          value: process.env.VUE_APP_JIRA_TEAM_YELLOW,
+          label: process.env.VUE_APP_JIRA_TEAM_YELLOW,
+        },
+      ],
+    }
+  },
   methods: {
     searchData(): void {
       this.$emit('searchData')
@@ -26,3 +49,8 @@ export default {
   },
 }
 </script>
+<style scope lang="scss">
+.search-panel {
+  margin-top: 80px;
+}
+</style>
