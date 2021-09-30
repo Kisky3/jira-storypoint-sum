@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { Doughnut } from 'vue-chartjs';
 
 export default {
