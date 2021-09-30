@@ -2,6 +2,7 @@ export { default as Container } from '../../components/Container.vue'
 export { default as DoughnutChart } from '../../components/DoughnutChart.vue'
 export { default as Header } from '../../components/Header.vue'
 export { default as SearchPanel } from '../../components/SearchPanel.vue'
+export { default as AtomsInputText } from '../../components/atoms/InputText.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

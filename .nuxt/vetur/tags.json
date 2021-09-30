@@ -10,5 +10,8 @@
   },
   "SearchPanel": {
     "description": "Auto imported from components/SearchPanel.vue"
+  },
+  "AtomsInputText": {
+    "description": "Auto imported from components/atoms/InputText.vue"
   }
 }

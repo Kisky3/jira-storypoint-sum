@@ -36,6 +36,7 @@ export default {
     },
   },
   mounted() {
+    // TODO: fix ts error
     // @ts-ignore: Unreachable code error
     this.renderChart(this.data, this.options)
   },
