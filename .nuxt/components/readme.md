@@ -11,3 +11,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Header>` | `<header>` (components/Header.vue)
 - `<SearchPanel>` | `<search-panel>` (components/SearchPanel.vue)
 - `<AtomsBasicInput>` | `<atoms-basic-input>` (components/atoms/BasicInput.vue)
+- `<AtomsBasicRadio>` | `<atoms-basic-radio>` (components/atoms/BasicRadio.vue)

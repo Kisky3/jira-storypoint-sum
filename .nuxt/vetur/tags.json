@@ -13,5 +13,8 @@
   },
   "AtomsBasicInput": {
     "description": "Auto imported from components/atoms/BasicInput.vue"
+  },
+  "AtomsBasicRadio": {
+    "description": "Auto imported from components/atoms/BasicRadio.vue"
   }
 }
