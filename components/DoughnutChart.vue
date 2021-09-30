@@ -1,37 +1,40 @@
 <script lang="ts">
-import { Doughnut } from 'vue-chartjs';
+import { Doughnut } from 'vue-chartjs'
 
 export default {
   extends: Doughnut,
   name: 'chart',
-  data () {
+  data() {
     return {
       options: {
         responsive: true,
         legend: {
           position: 'right',
-          labels : {
+          labels: {
             fontSize: 28,
-          }
+          },
         },
-      }
+      },
     }
   },
   computed: {
     data() {
-       return {
-         datasets: [{
+      return {
+        datasets: [
+          {
             label: 'Dataset',
             data: [10, 60, 30],
             backgroundColor: ['pink', 'skyblue', 'gray'],
-            borderColor: 'transparent'
-          }],
-          labels:['メンバー１', 'メンバー２', 'メンバー3']
-       }
-    }
+            borderColor: 'transparent',
+          },
+        ],
+        labels: ['メンバー１', 'メンバー２', 'メンバー3'],
+      }
+    },
   },
-  mounted () {
+  mounted() {
+    // @ts-ignore: Unreachable code error
     this.renderChart(this.data, this.options)
-  }
+  },
 }
 </script>
