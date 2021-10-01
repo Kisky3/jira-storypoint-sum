@@ -2,6 +2,7 @@
 <template>
   <div class="search-panel">
     <!-- Search Panel Start -->
+    <basic-radio v-model="team" name="team" :options="teamOption" />
     <basic-input
       v-model="sprint"
       type="text"
@@ -9,7 +10,6 @@
       name="sprint"
       value="value"
     />
-    <basic-radio v-model="team" name="team" :options="teamOption" />
     <button @click="searchData">Search</button>
 
     <!-- Search Panel End -->
