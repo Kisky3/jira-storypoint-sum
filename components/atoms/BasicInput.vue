@@ -24,14 +24,14 @@ export default Vue.extend({
 })
 </script>
 <style scoped="scss">
-input[type='text'],
-select {
+input[type='text'] {
   width: 100%;
   border: solid 1px #e1e1e1;
   height: 40px;
   padding: 10px 15px;
   background: #fff;
   outline: none;
+  margin: 20px 0;
 }
 
 input[type='text']:focus,
