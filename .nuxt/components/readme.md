@@ -8,7 +8,7 @@ You can directly use them in pages and other components without the need to impo
 
 - `<AtomsBasicInput>` | `<atoms-basic-input>` (components/atoms/BasicInput.vue)
 - `<AtomsBasicRadio>` | `<atoms-basic-radio>` (components/atoms/BasicRadio.vue)
-- `<OrganismsContainer>` | `<organisms-container>` (components/organisms/Container.vue)
 - `<MoleculesDoughnutChart>` | `<molecules-doughnut-chart>` (components/molecules/DoughnutChart.vue)
 - `<MoleculesHeader>` | `<molecules-header>` (components/molecules/Header.vue)
 - `<MoleculesSearchPanel>` | `<molecules-search-panel>` (components/molecules/SearchPanel.vue)
+- `<OrganismsContainer>` | `<organisms-container>` (components/organisms/Container.vue)

@@ -5,8 +5,8 @@
     <basic-input
       v-model="sprint"
       type="text"
-      placeholder="例）シャープ AQUOS LC-50U45"
-      name="商品名"
+      placeholder="スプリント名 例）スプリント20"
+      name="sprint"
       value="value"
     />
     <basic-radio v-model="team" name="team" :options="teamOption" />
