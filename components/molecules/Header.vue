@@ -9,14 +9,14 @@
         </div>
         <div class="site-header__end">
           <nav class="nav">
-            <button
+            <!-- <button
               class="nav__toggle"
               @click="openMenu"
               aria-expanded="false"
               type="button"
             >
               menu
-            </button>
+            </button> -->
             <ul class="nav__wrapper">
               <li class="nav__item active">
                 <a href="#">
@@ -134,6 +134,14 @@
     <!-- Header End -->
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import BasicBtn from '../atoms/BasicBtn.vue'
+export default Vue.extend({
+  name: 'Header',
+})
+</script>
 <style scope lang="scss">
 $small: 800px;
 
@@ -241,22 +249,7 @@ $small: 800px;
 .nav__toggle {
   display: none;
   @media (max-width: $small - 1) {
-    width: 70px;
-    height: 40px;
-    background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%); /* W3C */
-    border: none;
-    border-radius: 5px;
-    position: relative;
-    color: #fbfbfb;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    font-size: 15px;
-    text-align: left;
-    text-indent: 5px;
-    cursor: pointer;
     display: block;
-    margin: 0 auto;
   }
 }
 
