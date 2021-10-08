@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="c-arrow-btn" @click="submit">
+  <button type="button" class="nav__toggle" @click="submit">
     <slot />
   </button>
 </template>

@@ -17,6 +17,7 @@
             >
               menu
             </button> -->
+            <basic-btn @handleOnClick="openMenu()">menu</basic-btn>
             <ul class="nav__wrapper">
               <li class="nav__item active">
                 <a href="#">
@@ -140,6 +141,9 @@ import Vue from 'vue'
 import BasicBtn from '../atoms/BasicBtn.vue'
 export default Vue.extend({
   name: 'Header',
+  components: {
+    BasicBtn,
+  },
 })
 </script>
 <style scope lang="scss">
@@ -246,12 +250,12 @@ $small: 800px;
   }
 }
 
-.nav__toggle {
-  display: none;
-  @media (max-width: $small - 1) {
-    display: block;
-  }
-}
+// .nav__toggle {
+//   display: none;
+//   @media (max-width: $small - 1) {
+//     display: block;
+//   }
+// }
 
 .inactive-item {
   opacity: 0;
