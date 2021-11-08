@@ -1,6 +1,5 @@
 <template>
-  <button type="button" class="nav__toggle" @click="submit">
-    <slot />
+  <button type="button" class="nav__toggle" @click="submit">menu
   </button>
 </template>
 <script lang="ts">

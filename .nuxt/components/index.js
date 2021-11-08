@@ -1,10 +1,10 @@
 export { default as AtomsBasicBtn } from '../../components/atoms/BasicBtn.vue'
 export { default as AtomsBasicInput } from '../../components/atoms/BasicInput.vue'
 export { default as AtomsBasicRadio } from '../../components/atoms/BasicRadio.vue'
+export { default as OrganismsContainer } from '../../components/organisms/Container.vue'
 export { default as MoleculesDoughnutChart } from '../../components/molecules/DoughnutChart.vue'
 export { default as MoleculesHeader } from '../../components/molecules/Header.vue'
 export { default as MoleculesSearchPanel } from '../../components/molecules/SearchPanel.vue'
-export { default as OrganismsContainer } from '../../components/organisms/Container.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
