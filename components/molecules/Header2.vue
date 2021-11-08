@@ -3,7 +3,7 @@
   <div>
     <!-- Header Start -->
     <header class="site-header">
-      <!-- <div class="wrapper site-header__wrapper">
+      <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
           <a href="#" class="brand">Sprint & Storypoint Dashboard</a>
         </div>
@@ -18,7 +18,7 @@
               menu
             </button> -->
             <basic-btn v-on:handleOnClick="openMenu">menu</basic-btn>
-            <!-- <ul class="nav__wrapper">
+            <ul class="nav__wrapper">
               <li class="nav__item active">
                 <a href="#">
                   <svg
@@ -130,7 +130,7 @@
             </ul>
           </nav>
         </div>
-      </div> -->
+      </div>
     </header>
     <!-- Header End -->
   </div>

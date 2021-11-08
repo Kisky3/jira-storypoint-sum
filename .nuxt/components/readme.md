@@ -11,5 +11,6 @@ You can directly use them in pages and other components without the need to impo
 - `<AtomsBasicRadio>` | `<atoms-basic-radio>` (components/atoms/BasicRadio.vue)
 - `<OrganismsContainer>` | `<organisms-container>` (components/organisms/Container.vue)
 - `<MoleculesDoughnutChart>` | `<molecules-doughnut-chart>` (components/molecules/DoughnutChart.vue)
-- `<MoleculesHeader>` | `<molecules-header>` (components/molecules/Header.vue)
+- `<MoleculesHeader2>` | `<molecules-header2>` (components/molecules/Header2.vue)
+- `<MoleculesSearchPanel copy>` | `<molecules-search-panel copy>` (components/molecules/SearchPanel copy.vue)
 - `<MoleculesSearchPanel>` | `<molecules-search-panel>` (components/molecules/SearchPanel.vue)
