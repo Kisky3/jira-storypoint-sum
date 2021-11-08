@@ -139,12 +139,12 @@
 <script lang="ts">
 import Vue from "vue";
 import BasicBtn from "../atoms/BasicBtn.vue";
-export default Vue.extend({
+export default {
   name: "Header",
   components: {
     BasicBtn,
   },
-});
+};
 </script>
 <style scope lang="scss">
 $small: 800px;

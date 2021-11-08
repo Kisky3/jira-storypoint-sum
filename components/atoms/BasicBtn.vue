@@ -9,6 +9,7 @@ export default Vue.extend({
   name: 'BasicBtn',
   methods: {
     submit(): void {
+      alert("hhhh");
       this.$emit('handleOnClick')
     },
   },
