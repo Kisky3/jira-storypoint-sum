@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"NODE_ENV":"local","JIRA_TEAM_BLUE":"チームブルー","JIRA_TEAM_YELLOW":"チームチームイエロー","JIRA_API_BASE_URL":"https://marketenterprise.atlassian.net/rest/api/2/search?jql=","JIRA_API_USER":"kou@marketenterprise.co.jp:Vk3SJ4e29CHUkTwUe20D2F2C"}
+      env: {}
     }
     // Only set once
 

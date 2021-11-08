@@ -10,7 +10,7 @@
 import Vue from 'vue'
 import Container from '~/components/organisms/Container.vue'
 import Header from '~/components/molecules/Header.vue'
-//
+
 export default Vue.extend({
   components: { Container, Header },
 })
