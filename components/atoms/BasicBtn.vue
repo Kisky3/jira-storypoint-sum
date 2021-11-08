@@ -1,5 +1,6 @@
 <template>
-  <button type="button" class="nav__toggle" @click="submit">menu
+  <button type="button" class="nav__toggle" @click="submit">
+    <slot />
   </button>
 </template>
 <script lang="ts">
@@ -8,7 +9,6 @@ export default Vue.extend({
   name: 'BasicBtn',
   methods: {
     submit(): void {
-      alert("hhhh");
       this.$emit('handleOnClick')
     },
   },

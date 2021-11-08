@@ -220,6 +220,13 @@ $small: 800px;
   }
 }
 
+.nav__toggle {
+  display: none;
+  @media (max-width: $small - 1) {
+    display: block;
+  }
+}
+
 .nav__item {
   &:not(:last-child) {
     margin-right: 0.5rem;
