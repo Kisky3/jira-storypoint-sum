@@ -138,12 +138,24 @@
 
 <script lang="ts">
 import Vue from "vue";
-import BasicBtn from "../atoms/BasicBtn";
+import BasicBtn from "../atoms/BasicBtn.vue";
 export default {
+  name: "Header",
   components: {
     BasicBtn
   },
-}
+  methods: {
+    openMenu: () => {
+      alert("d");
+      let classList = document.querySelector(".nav__wrapper").classList;
+      if (classList.contains("active")) {
+        classList.remove("active");
+      } else {
+        classList.add("active");
+      }
+    },
+  },
+};
 </script>
 <style scope lang="scss">
 $small: 800px;
@@ -253,20 +265,3 @@ $small: 800px;
   opacity: 0;
 }
 </style>
-
-<script>
-export default {
-  name: "Header",
-  methods: {
-    openMenu: () => {
-      alert("d");
-      let classList = document.querySelector(".nav__wrapper").classList;
-      if (classList.contains("active")) {
-        classList.remove("active");
-      } else {
-        classList.add("active");
-      }
-    },
-  },
-};
-</script>

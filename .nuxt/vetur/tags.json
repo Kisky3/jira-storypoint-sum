@@ -8,19 +8,16 @@
   "AtomsBasicRadio": {
     "description": "Auto imported from components/atoms/BasicRadio.vue"
   },
-  "OrganismsContainer": {
-    "description": "Auto imported from components/organisms/Container.vue"
-  },
   "MoleculesDoughnutChart": {
     "description": "Auto imported from components/molecules/DoughnutChart.vue"
   },
-  "MoleculesHeader2": {
-    "description": "Auto imported from components/molecules/Header2.vue"
-  },
-  "MoleculesSearchPanel copy": {
-    "description": "Auto imported from components/molecules/SearchPanel copy.vue"
+  "MoleculesHeader": {
+    "description": "Auto imported from components/molecules/Header.vue"
   },
   "MoleculesSearchPanel": {
     "description": "Auto imported from components/molecules/SearchPanel.vue"
+  },
+  "OrganismsContainer": {
+    "description": "Auto imported from components/organisms/Container.vue"
   }
 }
