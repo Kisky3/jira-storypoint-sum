@@ -4,7 +4,7 @@
     <!-- Container Start -->
     <div class="container">
       <search-panel @searchData="searchData($event)" />
-      <doughnut-chart />
+      <doughnut-chart :team="team" :sprint="sprint"/>
     </div>
 
     <!-- Container End -->
@@ -35,9 +35,18 @@ export default {
     DoughnutChart,
     SearchPanel,
   },
+  data():SearchData {
+    return {
+      team: "",
+      sprint: ""
+    }
+  },
   methods: {
     searchData(event:SearchData): void {
-      console.log(event);
+      if(event) {
+        this.team = event.team;
+        this.sprint = event.sprint;
+      }
     },
   },
 }

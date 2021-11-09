@@ -1,6 +1,6 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div class="search-panel">
+  <div class="search__panel">
     <!-- Search Panel Start -->
     <basic-radio v-model="team" name="team" :options="teamOption" />
     <basic-input
@@ -9,7 +9,7 @@
       placeholder="スプリント名 例）スプリント20"
       name="sprint"
     />
-    <basic-btn @handleOnClick="searchData">Search</basic-btn>
+    <basic-btn @handleOnClick="searchData" class="search__btn">Search</basic-btn>
     <!-- Search Panel End -->
   </div>
 </template>
@@ -26,7 +26,6 @@ export default {
     BasicBtn
   },
   mounted() {
-    alert(process.env.VUE_APP_JIRA_TEAM_BLUE)
   },
   data() {
     return {
@@ -52,7 +51,12 @@ export default {
 }
 </script>
 <style scope lang="scss">
-.search-panel {
-  margin-top: 80px;
+.search {
+  &__panel {
+    margin-top: 80px;
+  }
+  &__btn {
+    float: left;
+  }
 }
 </style>
