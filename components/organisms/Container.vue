@@ -24,13 +24,19 @@
 <script lang="ts">
 import DoughnutChart from '@/components/molecules/DoughnutChart.vue'
 import SearchPanel from '@/components/molecules/SearchPanel.vue'
+// データの型を定義する
+export type SearchData = {
+  team: string,
+  sprint: string
+}
+
 export default {
   components: {
     DoughnutChart,
     SearchPanel,
   },
   methods: {
-    searchData(event:any): void {
+    searchData(event:SearchData): void {
       console.log(event);
     },
   },
