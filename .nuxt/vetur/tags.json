@@ -8,9 +8,6 @@
   "AtomsBasicRadio": {
     "description": "Auto imported from components/atoms/BasicRadio.vue"
   },
-  "OrganismsContainer": {
-    "description": "Auto imported from components/organisms/Container.vue"
-  },
   "MoleculesDoughnutChart": {
     "description": "Auto imported from components/molecules/DoughnutChart.vue"
   },
@@ -19,5 +16,8 @@
   },
   "MoleculesSearchPanel": {
     "description": "Auto imported from components/molecules/SearchPanel.vue"
+  },
+  "OrganismsContainer": {
+    "description": "Auto imported from components/organisms/Container.vue"
   }
 }
