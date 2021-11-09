@@ -146,12 +146,11 @@ export default {
   },
   methods: {
     openMenu: () => {
-      alert("d");
-      let classList = document.querySelector(".nav__wrapper").classList;
-      if (classList.contains("active")) {
-        classList.remove("active");
+      let classList: DOMTokenList | undefined = document.querySelector(".nav__wrapper")?.classList;
+      if (classList?.contains("active")) {
+        classList?.remove("active");
       } else {
-        classList.add("active");
+        classList?.add("active");
       }
     },
   },
