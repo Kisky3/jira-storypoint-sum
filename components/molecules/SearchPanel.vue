@@ -8,7 +8,6 @@
       type="text"
       placeholder="スプリント名 例）スプリント20"
       name="sprint"
-      value="value"
     />
     <basic-btn @handleOnClick="searchData">Search</basic-btn>
     <!-- Search Panel End -->
@@ -31,6 +30,8 @@ export default {
   },
   data() {
     return {
+      team: "",
+      sprint: "",
       teamOption: [
         {
           value: process.env.VUE_APP_JIRA_TEAM_BLUE,
@@ -45,7 +46,7 @@ export default {
   },
   methods: {
     searchData(): void {
-      this.$emit('searchData')
+      this.$emit('searchData',{team: this.team, sprint: this.sprint})
     },
   },
 }

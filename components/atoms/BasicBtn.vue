@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="nav__toggle" @click="handleOnClick">
+  <button type="button" class="nav__toggle" @click="handleOnClick($event)">
     <slot />
   </button>
 </template>
@@ -8,8 +8,8 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'BasicBtn',
   methods: {
-    handleOnClick(): void {
-      this.$emit('handleOnClick')
+    handleOnClick(event:any): void {
+      this.$emit('handleOnClick', event)
     },
   },
 })

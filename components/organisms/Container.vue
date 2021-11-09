@@ -3,7 +3,7 @@
   <div>
     <!-- Container Start -->
     <div class="container">
-      <search-panel @searchData="searchData()" />
+      <search-panel @searchData="searchData($event)" />
       <doughnut-chart />
     </div>
 
@@ -30,8 +30,8 @@ export default {
     SearchPanel,
   },
   methods: {
-    searchData(): void {
-      alert('hey')
+    searchData(event:any): void {
+      console.log(event);
     },
   },
 }
