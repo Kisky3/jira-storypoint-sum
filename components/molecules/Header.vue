@@ -9,14 +9,6 @@
         </div>
         <div class="site-header__end">
           <nav class="nav">
-            <!-- <button
-              class="nav__toggle"
-              @click="openMenu"
-              aria-expanded="false"
-              type="button"
-            >
-              menu
-            </button> -->
             <basic-btn v-on:handleOnClick="openMenu">menu</basic-btn>
             <ul class="nav__wrapper">
               <li class="nav__item active">
