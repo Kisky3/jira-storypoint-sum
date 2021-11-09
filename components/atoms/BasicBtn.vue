@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="nav__toggle" @click="submit">
+  <button type="button" class="nav__toggle" @click="handleOnClick">
     <slot />
   </button>
 </template>
@@ -8,7 +8,7 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'BasicBtn',
   methods: {
-    submit(): void {
+    handleOnClick(): void {
       this.$emit('handleOnClick')
     },
   },
@@ -16,8 +16,9 @@ export default Vue.extend({
 </script>
 <style lang="scss">
 .nav__toggle {
-  width: 70px;
-  height: 40px;
+  min-width: 70px;
+  min-height: 40px;
+  padding: 3px 10px; 
   background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%); /* W3C */
   border: none;
   border-radius: 5px;

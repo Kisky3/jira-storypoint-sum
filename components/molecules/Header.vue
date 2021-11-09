@@ -9,7 +9,7 @@
         </div>
         <div class="site-header__end">
           <nav class="nav">
-            <basic-btn v-on:handleOnClick="openMenu">menu</basic-btn>
+            <basic-btn v-on:handleOnClick="openMenu" class="nav__toggle__header">menu</basic-btn>
             <ul class="nav__wrapper">
               <li class="nav__item active">
                 <a href="#">
@@ -108,7 +108,7 @@ $small: 800px;
     right: 0;
     left: 0;
     z-index: -1;
-    background-color: rgba(217, 240, 247, 0.5);
+    background-color: rgba(217, 240, 247, 0.9);
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
@@ -124,9 +124,11 @@ $small: 800px;
 }
 
 .nav__toggle {
-  display: none;
-  @media (max-width: $small - 1) {
+  &__header {
+    display: none;
+    @media (max-width: $small - 1) {
     display: block;
+  }
   }
 }
 
@@ -139,6 +141,7 @@ $small: 800px;
     display: block;
     padding: 1rem;
     border-left: 4px solid transparent;
+    border-bottom: 1px solid #fff;
 
     @media (min-width: $small) {
       text-align: center;

@@ -10,8 +10,7 @@
       name="sprint"
       value="value"
     />
-    <button @click="searchData">Search</button>
-
+    <basic-btn @handleOnClick="searchData">Search</basic-btn>
     <!-- Search Panel End -->
   </div>
 </template>
@@ -20,10 +19,12 @@
 <script lang="ts">
 import BasicInput from '../atoms/BasicInput.vue'
 import BasicRadio from '../atoms/BasicRadio.vue'
+import BasicBtn from '../atoms/BasicBtn.vue'
 export default {
   components: {
     BasicInput,
     BasicRadio,
+    BasicBtn
   },
   mounted() {
     alert(process.env.JIRA_TEAM_BLUE)
