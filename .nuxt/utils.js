@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {}
+      env: {"VUE_APP_JIRA_TEAM_BLUE":"チームブルー","VUE_APP_JIRA_TEAM_YELLOW":"チームイエロー"}
     }
     // Only set once
 
