@@ -1,5 +1,6 @@
 import axios, { AxiosPromise } from "axios";
-const buffer = new Buffer('JIRA ID' + ':' + 'JIRA PASSWAORD');
+const buffer = new Buffer(process.env.VUE_APP_JIRA_ID + ':' + process.env.VUE_APP_JIRA_PASSWORD);
+const string = buffer.toString('base64');
 export default {
   getJiraStoryPointData(team: string, sprint: string): AxiosPromise | void {
     let URL =
