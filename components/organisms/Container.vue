@@ -4,7 +4,8 @@
     <!-- Container Start -->
     <div class="container">
       <search-panel @searchData="searchData($event)" />
-      <doughnut-chart :team="team" :sprint="sprint"/>
+      {{team}} {{sprint}}
+      <doughnut-chart :data="data" />
     </div>
 
     <!-- Container End -->
@@ -24,6 +25,8 @@
 <script lang="ts">
 import DoughnutChart from '@/components/molecules/DoughnutChart.vue'
 import SearchPanel from '@/components/molecules/SearchPanel.vue'
+import api from '@/api/info'
+
 // データの型を定義する
 export type SearchData = {
   team: string,
@@ -40,6 +43,23 @@ export default {
       team: "",
       sprint: ""
     }
+  },
+  computed: {
+    // Chart用のデータプロパティ
+    data() {
+      api.getJiraStoryPointData(this.team, this.sprint)
+      return {
+        datasets: [
+          {
+            label: 'Dataset',
+            data: [10, 60, 30],
+            backgroundColor: ['pink', 'skyblue', 'gray'],
+            borderColor: 'transparent',
+          },
+        ],
+        labels: ['メンバー１', 'メンバー２', 'メンバー3'],
+      }
+    },
   },
   methods: {
     searchData(event:SearchData): void {
