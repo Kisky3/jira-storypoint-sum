@@ -30,7 +30,7 @@ export default {
   css: [{ src: '~/assets/scss/common.scss' }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/vue-jsonp'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -46,7 +46,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    "@nuxtjs/axios"
+    '@nuxtjs/axios',
   ],
   styleResources: {
     scss: ['~/assets/scss/_variable.scss'],

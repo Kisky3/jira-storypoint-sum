@@ -3,7 +3,6 @@
     "name": "index",
     "path": "/",
     "component": "/Users/apple/Desktop/jira-storypoint-sum/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_8a866c80"
+    "chunkName": "pages/index"
   }
 ]
