@@ -27,5 +27,17 @@
     "fibers": "^5.0.0",
     "nuxt-vite": "^0.2.4",
     "sass": "^1.42.0"
-  }
+  },
+  "description": "https://jira-storypoint-sum.netlify.app/",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kisky3/jira-storypoint-sum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kisky3/jira-storypoint-sum/issues"
+  },
+  "homepage": "https://github.com/Kisky3/jira-storypoint-sum#readme"
 }
