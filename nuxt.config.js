@@ -46,6 +46,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    "@nuxtjs/axios"
   ],
   styleResources: {
     scss: ['~/assets/scss/_variable.scss'],
