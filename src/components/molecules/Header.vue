@@ -41,7 +41,6 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import BasicBtn from "../atoms/BasicBtn.vue";
 export default {
   name: "Header",
