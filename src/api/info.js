@@ -25,8 +25,6 @@ export default {
     console.log(team, sprint)
     let URL = process.env.VUE_APP_JIRA_API_BASE_URL
     axios
-      // TODO: fix ts error
-      // @ts-ignore: Unreachable code error
       .get(URL, {
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +35,6 @@ export default {
           bodyData
         },
       })
-      // TODO: fix ts type after
       .then((res) => {
         alert("hey");
         console.log(res);
