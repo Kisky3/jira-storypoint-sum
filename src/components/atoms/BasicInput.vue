@@ -1,27 +1,42 @@
-<script lang="ts">
-import { Doughnut } from 'vue-chartjs'
+<template>
+  <input
+    :type="type"
+    :value="value"
+    :name="name"
+    :placeholder="placeholder"
+    @input="updateValue"
+  />
+</template>
 
-export default {
-  extends: Doughnut,
-  name: 'chart',
-  props: ["data"],
-  data() {
-    return {
-      options: {
-        responsive: true,
-        legend: {
-          position: 'right',
-          labels: {
-            fontSize: 28,
-          },
-        },
-      },
-    }
-  },
-  mounted() {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  name: 'BasicInput',
+  props: ['value', 'type', 'name', 'placeholder'],
+  methods: {
     // TODO: fix ts error
     // @ts-ignore: Unreachable code error
-    this.renderChart(this.data, this.options)
+    updateValue(e: VueEvent<HTMLInputElement>): void {
+      this.$emit('input', e.target.value)
+      this.$emit('change')
+    },
   },
-}
+})
 </script>
+<style scoped="scss">
+input[type='text'] {
+  width: 100%;
+  border: solid 1px #e1e1e1;
+  height: 40px;
+  padding: 10px 15px;
+  background: #fff;
+  outline: none;
+  margin: 20px 0;
+}
+
+input[type='text']:focus,
+select:focus {
+  border: solid 1px #4eb5e5;
+  box-shadow: 0 0 3px 0 #4eb5e5 inset;
+}
+</style>
