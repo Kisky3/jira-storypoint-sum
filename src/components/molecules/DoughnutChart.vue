@@ -8,24 +8,13 @@
 import Chart from 'chart.js/auto';
 
 export default {
+  props:['data'],
   methods: {
     renderChart() {
       let ctx = document.getElementById("chart");
       new Chart(ctx, {
         type: 'doughnut',
-        data: {
-          datasets: [{
-            data: [10, 20, 30],
-            backgroundColor: ['pink', 'skyblue', 'gray'],
-            borderColor: 'transparent'
-          }],
-          // これらのラベルは凡例とツールチップに表示されます。
-          labels: [
-            'Red',
-            'Yellow',
-            'Blue'
-          ]
-        }
+        data: this.data
       });
     }
   },
