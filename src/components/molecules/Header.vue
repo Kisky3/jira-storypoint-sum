@@ -47,6 +47,16 @@ export default {
   components: {
     BasicBtn
   },
+  methods: {
+    openMenu: () => {
+      let classList = document.querySelector(".nav__wrapper")?.classList;
+      if (classList?.contains("active")) {
+        classList?.remove("active");
+      } else {
+        classList?.add("active");
+      }
+    },
+  },
 };
 </script>
 <style scope lang="scss">
