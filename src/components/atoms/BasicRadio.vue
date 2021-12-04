@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="radio__container">
     <div v-for="(option, index) in options" :key="index">
       <input
         :id="option.label"
@@ -38,6 +38,11 @@ input[type='radio'] {
   display: none;
 }
 
+.radio__container {
+  display: flex;
+  flex-direction: row;
+}
+
 .radio {
   width: 250px;
   height: 10px;
@@ -47,6 +52,7 @@ input[type='radio'] {
   border-radius: 8px;
   vertical-align: middle;
   cursor: pointer;
+  margin: 5px;
 }
 
 .radio:hover:after {
