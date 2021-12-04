@@ -23,9 +23,9 @@
 </style>
 
 <script lang="ts">
-import DoughnutChart from '@/components/molecules/DoughnutChart.vue'
-import SearchPanel from '@/components/molecules/SearchPanel.vue'
-import api from '@/api/info'
+import DoughnutChart from '../molecules/DoughnutChart.vue'
+import SearchPanel from '../molecules/SearchPanel.vue'
+import api from '../../api/info'
 
 // データの型を定義する
 export type SearchData = {
