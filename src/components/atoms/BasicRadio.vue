@@ -16,17 +16,17 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 
 export default ({
   name: 'InputRadio',
   props: ['value', 'options', 'name'],
   computed: {
     selected: {
-      get(): string | number | boolean {
+      get() {
         return this.value
       },
-      set(newValue: string | number | boolean): void {
+      set(newValue) {
         this.$emit('input', newValue)
       },
     },

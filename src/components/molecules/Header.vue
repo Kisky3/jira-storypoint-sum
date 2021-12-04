@@ -40,7 +40,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import BasicBtn from "../atoms/BasicBtn.vue";
 export default {
   name: "Header",

@@ -3,11 +3,11 @@
     <slot />
   </button>
 </template>
-<script lang="ts">
+<script>
 export default ({
   name: 'BasicBtn',
   methods: {
-    handleOnClick(): void {
+    handleOnClick() {
       this.$emit('handleOnClick')
     },
   },

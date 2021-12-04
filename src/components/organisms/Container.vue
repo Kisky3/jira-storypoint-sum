@@ -22,16 +22,10 @@
 }
 </style>
 
-<script lang="ts">
+<script>
 import DoughnutChart from '../molecules/DoughnutChart.vue'
 import SearchPanel from '../molecules/SearchPanel.vue'
-import api from '../../api/info'
-
-// データの型を定義する
-export type SearchData = {
-  team: string,
-  sprint: string
-}
+import api from '../../api/info.js'
 
 export default {
   components: {
@@ -39,7 +33,7 @@ export default {
     SearchPanel,
   },
   // @ts-ignore: Unreachable code error
-  data():SearchData {
+  data() {
     return {
       team: "",
       sprint: ""
@@ -63,7 +57,7 @@ export default {
     },
   },
   methods: {
-    searchData(event:SearchData): void {
+    searchData(event) {
       if(event) {
         this.team = event.team;
         this.sprint = event.sprint;

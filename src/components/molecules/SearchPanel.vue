@@ -14,7 +14,7 @@
 </template>
 <style scope lang="scss"></style>
 
-<script lang="ts">
+<script>
 import BasicInput from '../atoms/BasicInput.vue'
 import BasicRadio from '../atoms/BasicRadio.vue'
 import BasicBtn from '../atoms/BasicBtn.vue'
@@ -42,7 +42,7 @@ export default {
     }
   },
   methods: {
-    searchData(): void {
+    searchData() {
       this.$emit('searchData',{team: this.team, sprint: this.sprint})
     },
   },

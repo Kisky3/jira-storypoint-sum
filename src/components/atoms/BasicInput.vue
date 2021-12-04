@@ -8,14 +8,14 @@
   />
 </template>
 
-<script lang="ts">
+<script>
 export default ({
   name: 'BasicInput',
   props: ['value', 'type', 'name', 'placeholder'],
   methods: {
     // TODO: fix ts error
     // @ts-ignore: Unreachable code error
-    updateValue(e: any): void {
+    updateValue(e) {
       this.$emit('input', e.target.value)
       this.$emit('change')
     },

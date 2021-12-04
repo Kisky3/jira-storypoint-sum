@@ -1,4 +1,4 @@
-import axios, { AxiosPromise } from "axios";
+import axios from "axios";
 const buffer = new Buffer(
   process.env.VUE_APP_JIRA_ID + ":" + process.env.VUE_APP_JIRA_PASSWORD
 );
@@ -21,7 +21,8 @@ const bodyData = `{
 }`;
 
 export default {
-  getJiraStoryPointData(team: String, sprint: String): AxiosPromise | void {
+  getJiraStoryPointData(team, sprint) {
+    console.log(team, sprint)
     let URL = process.env.VUE_APP_JIRA_API_BASE_URL
     axios
       // TODO: fix ts error
@@ -37,7 +38,7 @@ export default {
         },
       })
       // TODO: fix ts type after
-      .then((res: any) => {
+      .then((res) => {
         alert("hey");
         console.log(res);
         return res;
