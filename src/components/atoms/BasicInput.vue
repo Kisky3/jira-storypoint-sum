@@ -9,14 +9,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+export default ({
   name: 'BasicInput',
   props: ['value', 'type', 'name', 'placeholder'],
   methods: {
     // TODO: fix ts error
     // @ts-ignore: Unreachable code error
-    updateValue(e: VueEvent<HTMLInputElement>): void {
+    updateValue(e: any): void {
       this.$emit('input', e.target.value)
       this.$emit('change')
     },

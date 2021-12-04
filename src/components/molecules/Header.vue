@@ -5,7 +5,7 @@
     <header class="site-header">
       <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
-          <a href="#" class="brand">Sprint & Storypoint Dashboard</a>
+          <a href="#" class="brand">Storypoint Dashboard</a>
         </div>
         <div class="site-header__end">
           <nav class="nav">
@@ -46,16 +46,6 @@ export default {
   name: "Header",
   components: {
     BasicBtn
-  },
-  methods: {
-    openMenu: () => {
-      let classList: DOMTokenList | undefined = document.querySelector(".nav__wrapper")?.classList;
-      if (classList?.contains("active")) {
-        classList?.remove("active");
-      } else {
-        classList?.add("active");
-      }
-    },
   },
 };
 </script>

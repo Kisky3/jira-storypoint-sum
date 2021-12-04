@@ -2,6 +2,7 @@
 import { Doughnut } from 'vue-chartjs'
 
 export default {
+  // @ts-ignore: Unreachable code error
   extends: Doughnut,
   name: 'chart',
   props: ["data"],

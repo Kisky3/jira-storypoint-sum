@@ -1,4 +1,3 @@
-<!-- Please remove this file from your project -->
 <template>
   <div class="search__panel">
     <!-- Search Panel Start -->
@@ -25,8 +24,7 @@ export default {
     BasicRadio,
     BasicBtn
   },
-  mounted() {
-  },
+  // @ts-ignore: Unreachable code error
   data() {
     return {
       team: "",

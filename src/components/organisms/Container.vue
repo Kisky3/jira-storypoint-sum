@@ -38,6 +38,7 @@ export default {
     DoughnutChart,
     SearchPanel,
   },
+  // @ts-ignore: Unreachable code error
   data():SearchData {
     return {
       team: "",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <template v-for="(option, index) in options">
+    <div v-for="(option, index) in options" :key="index">
       <input
         :id="option.label"
         :key="index"
@@ -12,14 +12,13 @@
       <label :key="option.label" :for="option.label" class="radio">
         <span>{{ option.label }}</span>
       </label>
-    </template>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 
-export default Vue.extend({
+export default ({
   name: 'InputRadio',
   props: ['value', 'options', 'name'],
   computed: {
