@@ -15,9 +15,10 @@ export default {
         type: 'doughnut',
         data: {
           datasets: [{
-            data: [10, 20, 30]
+            data: [10, 20, 30],
+            backgroundColor: ['pink', 'skyblue', 'gray'],
+            borderColor: 'transparent'
           }],
-
           // これらのラベルは凡例とツールチップに表示されます。
           labels: [
             'Red',
