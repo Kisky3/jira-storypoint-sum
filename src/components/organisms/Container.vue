@@ -49,11 +49,10 @@ export default {
             backgroundColor: ['pink', 'skyblue', 'gray'],
             borderColor: 'transparent'
           }],
-          // これらのラベルは凡例とツールチップに表示されます。
           labels: [
-            'Red',
-            'Yellow',
-            'Blue'
+            'メンバー1',
+            'メンバー2',
+            'メンバー3'
           ]}
     },
   },
