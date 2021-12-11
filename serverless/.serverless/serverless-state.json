@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless/dev/1638890701006-2021-12-07T15:25:01.006Z/serverless.zip"
+                "S3Key": "serverless/serverless/dev/1638890809688-2021-12-07T15:26:49.688Z/serverless.zip"
               },
               "Handler": "handler.hello",
               "Runtime": "nodejs12.x",
@@ -192,14 +192,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersioniDcPANMIo0GxlRqtzHkZdGhyDZfEyMbhwPQmWNIFuns": {
+          "HelloLambdaVersionsDncc1UbUkWVxgsAF08xRMXtZLN8Qq134uicYOP0Xx4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "Z0GkudVly0DcU2YwqUupprB+VjCXvqKb3m0EA4Xu/l0="
+              "CodeSha256": "61FcI87Z/JpiWcNnELJ1XkqpYUE38/mlPhOT41P3Xk0="
             }
           }
         },
@@ -215,7 +215,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersioniDcPANMIo0GxlRqtzHkZdGhyDZfEyMbhwPQmWNIFuns"
+              "Ref": "HelloLambdaVersionsDncc1UbUkWVxgsAF08xRMXtZLN8Qq134uicYOP0Xx4"
             },
             "Export": {
               "Name": "sls-serverless-dev-HelloLambdaFunctionQualifiedArn"
@@ -318,7 +318,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersioniDcPANMIo0GxlRqtzHkZdGhyDZfEyMbhwPQmWNIFuns"
+        "versionLogicalId": "HelloLambdaVersionsDncc1UbUkWVxgsAF08xRMXtZLN8Qq134uicYOP0Xx4"
       }
     },
     "configValidationMode": "warn",
@@ -340,7 +340,7 @@
     "artifact": "/Users/apple/Desktop/jira-storypoint-sum/serverless/.serverless/serverless.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless/dev/1638890701006-2021-12-07T15:25:01.006Z",
+    "artifactDirectoryName": "serverless/serverless/dev/1638890809688-2021-12-07T15:26:49.688Z",
     "artifact": "serverless.zip"
   }
 }
