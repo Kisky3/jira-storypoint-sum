@@ -1,16 +1,18 @@
-<!-- Please remove this file from your project -->
 <template>
   <div>
-    Home
+    <Container />
   </div>
 </template>
 <style scope lang="scss">
-
 </style>
 
 <script>
-export default({
-  name: 'Home',
-  methods: {}
-})
+import Container from "../components/organisms/Container";
+
+export default ({
+  name: "Home",
+  components: {
+    Container,
+  }
+});
 </script>
