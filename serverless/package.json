@@ -2,13 +2,19 @@
   "name": "serverless",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "main": "handler.js",
+  "dependencies": {
+    "element-ui": "^2.4.5"
+  },
   "devDependencies": {
-    "serverless-plugin-custom-binary": "^2.0.0"
-  }
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "serverless-plugin-custom-binary": "^2.0.0",
+    "vue-cli-plugin-element": "~1.0.1"
+  },
+  "license": "ISC"
 }
