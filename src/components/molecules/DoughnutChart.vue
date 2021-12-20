@@ -1,5 +1,5 @@
 <template>
-    <canvas id="chart"></canvas>
+    <canvas id="chart" class="doughnut"></canvas>
 </template>
 
 <script>
@@ -23,3 +23,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+ .doughnut {
+   max-width:400px;
+   max-height: 400px;
+ }
+</style>

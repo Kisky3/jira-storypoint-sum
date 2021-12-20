@@ -1,14 +1,12 @@
 <template>
-    <footer class="border-top">
-    <b-nav align="center">
-      <b-nav-item>Kou Jira Storypoint Dashboard</b-nav-item>
-    </b-nav>
-    <p>Copyright 2021 vue3 sample.</p>
+  <footer>
+    <span>Jira Storypoint Dashboard</span>
+    <span>© 2006-2021 Kou inc.</span>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer",
-};
+  name: 'Footer'
+}
 </script>
