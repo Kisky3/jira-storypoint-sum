@@ -3,14 +3,38 @@
 'use strict';
 
 module.exports.hello = function (event, context, callback) {
-  const response = {
-    statusCode: 200,
-    headers: {
-      'Access-Control-Allow-Origin': '*', // Required for CORS support to work
-      'Access-Control-Allow-Credentials': true, // Required for cookies, authorization headers with HTTPS
-    },
-    body: JSON.stringify({ message: 'Hello World!' }),
-  };
+// This code sample uses the 'node-fetch' library:
+// https://www.npmjs.com/package/node-fetch
+const fetch = require('node-fetch');
 
-  callback(null, response);
+const bodyData = `{
+  "projectIds": [
+    10000,
+    10001,
+    10002
+  ],
+  "includeCollapsedFields": true
+}`;
+
+fetch('https://your-domain.atlassian.net/rest/api/3/jql/autocompletedata', {
+  method: 'POST',
+  headers: {
+    'Authorization': `Basic ${Buffer.from(
+      'email@example.com:<api_token>'
+    ).toString('base64')}`,
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+  body: bodyData
+})
+  .then(response => {
+    console.log(
+      `Response: ${response.status} ${response.statusText}`
+    );
+    callback(null, response);
+    return response.text();
+  })
+  .then(text => {console.log(text)})
+  .catch(err => console.error(err));
+
 };
