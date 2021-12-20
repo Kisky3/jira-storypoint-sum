@@ -11,17 +11,6 @@
     <!-- Container End -->
   </div>
 </template>
-<style scope lang="scss">
-.container {
-  max-width: 800px;
-  max-height: 800px;
-  position: absolute;
-  left: 50%;
-  top: 420px;
-  transform: translate(-50%, -50%);
-}
-</style>
-
 <script>
 import DoughnutChart from '../molecules/DoughnutChart.vue'
 import SearchPanel from '../molecules/SearchPanel.vue'

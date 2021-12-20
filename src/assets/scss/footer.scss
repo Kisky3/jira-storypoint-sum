@@ -1,0 +1,19 @@
+footer {
+  height: 60px;
+  background: #fff;
+  color: #A3A3A3;
+  width: 100%;
+  font-size:12px;
+  border-top: 1px solid #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+  background-color: #89c7de;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}

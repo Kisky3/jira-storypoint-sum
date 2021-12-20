@@ -48,13 +48,3 @@ export default {
   },
 }
 </script>
-<style scope lang="scss">
-.search {
-  &__panel {
-    margin-top: 80px;
-  }
-  &__btn {
-    float: left;
-  }
-}
-</style>
