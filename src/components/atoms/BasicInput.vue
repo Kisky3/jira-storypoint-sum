@@ -24,13 +24,12 @@ export default ({
 </script>
 <style scoped="scss">
 input[type='text'] {
-  width: 100%;
+  width: 80%;
   border: solid 1px #e1e1e1;
   height: 40px;
   padding: 10px 15px;
   background: #fff;
   outline: none;
-  margin: 20px 0;
 }
 
 input[type='text']:focus,

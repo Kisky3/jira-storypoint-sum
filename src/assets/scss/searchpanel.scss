@@ -1,6 +1,12 @@
 .search {
   &__panel {
-    margin-top: 80px;
+    margin-top: 20px;
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 20px 0 40px 0;
+    }
   }
   &__btn {
     float: left;
