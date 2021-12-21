@@ -22,9 +22,8 @@ export default ({
   },
 })
 </script>
-<style scoped="scss">
+<style>
 input[type='text'] {
-  width: 80%;
   border: solid 1px #e1e1e1;
   height: 40px;
   padding: 10px 15px;

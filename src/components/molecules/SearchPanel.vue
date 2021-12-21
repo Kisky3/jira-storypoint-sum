@@ -4,6 +4,7 @@
     <basic-radio v-model="team" name="team" :options="teamOption" />
     <div class="search__panel-wrap">
       <basic-input
+        class="search__panel-input"
         v-model="sprint"
         type="text"
         placeholder="スプリント名 例）スプリント20"
@@ -16,8 +17,6 @@
     <!-- Search Panel End -->
   </div>
 </template>
-<style scope lang="scss"></style>
-
 <script>
 import BasicInput from "../atoms/BasicInput.vue";
 import BasicRadio from "../atoms/BasicRadio.vue";

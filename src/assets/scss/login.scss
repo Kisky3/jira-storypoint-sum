@@ -1,0 +1,40 @@
+.login {
+  &__container{
+    width: 60%;
+    height:30%;
+    min-width: 600px;
+    min-height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border: solid 1px gray;
+  }
+  &__title {
+    width: 100%;
+    background:black;
+    padding: 5px 5px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+  }
+  &__context {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 100%;
+    label {
+      font-size: 18px;
+      color: black;
+    }
+    &-input {
+      width: 100%;
+    }
+  }
+
+  
+}
