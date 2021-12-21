@@ -1,0 +1,7 @@
+{
+    "code": "1",
+    "message" : "admin login success",
+    "data": {
+        "token": "admin"
+    }
+}

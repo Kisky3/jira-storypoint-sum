@@ -1,7 +1,5 @@
 .login {
   &__container{
-    width: 60%;
-    height:30%;
     min-width: 600px;
     min-height: 300px;
     position: absolute;
@@ -42,6 +40,7 @@
     &-btn {
       width: 50%;
       text-align: center;
+      margin-bottom: 20px;
     }
   }
 

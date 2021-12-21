@@ -1,0 +1,7 @@
+{
+    "code": "0",
+    "message" : "vip login success",
+    "data": {
+        "token": "vip"
+    }
+}
