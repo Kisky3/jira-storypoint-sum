@@ -2,8 +2,12 @@
 
 Vue project 
 
-<img width="557" alt="スクリーンショット 2021-12-06 23 45 31" src="https://user-images.githubusercontent.com/23165804/144866438-e8d083c2-8787-47c4-901d-ee6889901b81.png">
+<img width="605" alt="スクリーンショット 2021-12-21 23 41 01" src="https://user-images.githubusercontent.com/23165804/146948234-f9b94c01-bb96-4796-82e6-7ba6c570816f.png">
+<img width="601" alt="スクリーンショット 2021-12-21 23 41 15" src="https://user-images.githubusercontent.com/23165804/146948246-31ba92ea-66f4-4755-9a68-778fca1fe088.png">
+
+
 ＊＊＊
+
 
 ## Project setup
 ```
