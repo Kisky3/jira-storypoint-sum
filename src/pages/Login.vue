@@ -5,7 +5,7 @@
         <label>User:</label>
         <basic-input
           class="login__context-input"
-          v-model="user"
+          v-model.trim="user"
           type="text"
           placeholder="ユーザー名"
           name="user"
@@ -14,13 +14,19 @@
         <label>Password:</label>
         <basic-input
           class="login__context-input"
-          v-model="password"
+          v-model.trim="password"
           type="text"
           placeholder="パスワード"
           name="password"
+          @keyup.enter="login"
         />
 
-      <basic-btn class="login__context-btn">Login</basic-btn>
+      <basic-btn 
+        id="login-btn" 
+        @handleOnClick="login" 
+        class="login__context-btn">
+          Login
+      </basic-btn>
     </div>
   </div>
 </template>
@@ -40,5 +46,10 @@ export default {
       password: "",
     };
   },
+  methods: {
+    login() {
+      alert('login');
+    }
+  }
 };
 </script>
