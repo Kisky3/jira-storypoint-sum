@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div>
-    User
+    Login
   </div>
 </template>
 <style scope lang="scss">
@@ -10,7 +10,7 @@
 
 <script>
 export default({
-  name: 'User',
+  name: 'Login',
   methods: {}
 })
 </script>
