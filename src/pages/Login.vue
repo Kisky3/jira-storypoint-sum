@@ -20,7 +20,7 @@
           name="password"
         />
 
-      <basic-btn>Login</basic-btn>
+      <basic-btn class="login__context-btn">Login</basic-btn>
     </div>
   </div>
 </template>

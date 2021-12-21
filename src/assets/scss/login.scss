@@ -9,30 +9,39 @@
     top: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    border: solid 1px gray;
+    border: solid 1px #a3a3a3de;
+    border-radius: 5px;
   }
   &__title {
     width: 100%;
-    background:black;
-    padding: 5px 5px;
+    background:#a3a3a3de;
+    padding: 15px;
     color: white;
     font-size: 25px;
     position: absolute;
     top: 0;
+    font-weight: bold;
+    font-size: 20px;
   }
   &__context {
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 90px 20px 30px;
     width: 100%;
     label {
       font-size: 18px;
-      color: black;
+      color: #222222ad;
+      margin-bottom: 5px;
     }
     &-input {
       width: 100%;
+      margin-bottom: 30px;
+    }
+    &-btn {
+      width: 50%;
+      text-align: center;
     }
   }
 
