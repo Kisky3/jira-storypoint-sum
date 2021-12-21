@@ -1,9 +1,9 @@
 const app = require('express')();
 const adminLogin = require('./data/admin_login.json');
 const vipLogin = require('./data/vip_login.json');
-const url = require('url');
+const url = require("url");
 
-app.get("/login", (res, req) => {
+app.get("/login", (req, res) => {
     const userType = url.parse(req.url, true).query.user;
     switch (userType) {
         case 'vip': 
