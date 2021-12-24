@@ -1,14 +1,11 @@
 <!-- Please remove this file from your project -->
 <template>
   <div>
-    <!-- Container Start -->
-    <div class="container">
       <div class="container__wrap">
         <search-panel @searchData="searchData($event)" />
         {{team}} {{sprint}}
         <doughnut-chart :data="data" />
       </div>
-    </div>
     <!-- Container End -->
   </div>
 </template>
