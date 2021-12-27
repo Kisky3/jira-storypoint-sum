@@ -34,6 +34,7 @@
 <script>
 import BasicInput from "../components/atoms/BasicInput.vue";
 import BasicBtn from "../components/atoms/BasicBtn.vue";
+import {login} from "../../api";
 export default {
   name: "Login",
   components: {
@@ -47,8 +48,10 @@ export default {
     };
   },
   methods: {
-    login() {
-      alert('login');
+    async login() {
+      let data = await login(this.user);
+      let token = data.token;
+      console.log(data)
     }
   }
 };
