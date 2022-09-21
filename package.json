@@ -21,7 +21,7 @@
     "vue": "^3.0.0",
     "vue-chartjs": "^3.5.1",
     "vue-router": "^4",
-    "vuetify": "^2.6.1"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@types/compression": "^1.7.2",
